@@ -45,12 +45,17 @@ export default function Header() {
         {/* Navigation for Large Screens */}
         <nav className="hidden md:flex">
           <ul className="flex gap-6">
-            {["Rooms", "About Us", "Amenities", "Contact Us", "Gallery"].map(
-              (item, index) => (
+            {[
+              { name: "Rooms", href: "/rooms" },
+              { name: "About Us", href: "/about" },
+              { name: "Amenities", href: "/amenities" },
+              { name: "Contact Us", href: "/contact" },
+              { name: "Gallery", href: "/gallery" }
+            ].map((item, index) => (
                 <li key={index}>
-                  <Link href="#">
+                  <Link href={item.href}>
                     <h2 className="text-black text-lg font-mono hover:underline transition-all duration-300">
-                      {item}
+                      {item.name}
                     </h2>
                   </Link>
                 </li>
@@ -74,12 +79,17 @@ export default function Header() {
           ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5 pointer-events-none"}`}
       >
         <ul className="flex flex-col items-center gap-4 py-5">
-          {["Rooms", "About Us", "Amenities", "Contact Us", "Gallery"].map(
-            (item, index) => (
+          {[
+            { name: "Rooms", href: "/rooms" },
+            { name: "About Us", href: "/about" },
+            { name: "Amenities", href: "/amenities" },
+            { name: "Contact Us", href: "/contact" },
+            { name: "Gallery", href: "/gallery" }
+          ].map((item, index) => (
               <li key={index} className="w-full text-center">
-                <Link href="#" onClick={() => setIsMenuOpen(false)}>
+                <Link href={item.href} onClick={() => setIsMenuOpen(false)}>
                   <h2 className="text-black text-lg font-mono hover:underline transition-all duration-300">
-                    {item}
+                    {item.name}
                   </h2>
                 </Link>
               </li>

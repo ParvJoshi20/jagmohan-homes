@@ -10,29 +10,26 @@ import Footer from "./components/footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen w-full overflow-x-hidden">
-      {/* Header */}
-      <Header />
-
+    <div className="flex flex-col min-h-screen w-full overflow-x-hidden bg-white">
       {/* Main Content */}
       <main className="flex-grow">
         <HeroSection />
-        <section className="py-10 md:py-16">
+        <section className="py-8 md:py-12 lg:py-16">
           <Section1 />
         </section>
-        <section className="py-10 md:py-16">
+        <section className="py-8 md:py-12 lg:py-16">
           <Section2 />
         </section>
-        <section className="py-10 md:py-16">
+        <section className="py-8 md:py-12 lg:py-16">
           <Section3 />
         </section>
-        <section className="py-10 md:py-16">
+        <section className="py-8 md:py-12 lg:py-16">
           <Section4 />
         </section>
-        <section className="py-10 md:py-16">
+        <section className="py-8 md:py-12 lg:py-16">
           <Section5 />
         </section>
-        <section className="py-10 md:py-16">
+        <section className="py-8 md:py-12 lg:py-16">
           <Section6 />
         </section>
       </main>

@@ -36,7 +36,7 @@ export default function ImageCarousel() {
   };
 
   return (
-    <div className="relative w-full max-w-8xl mx-auto flex items-center justify-center">
+    <div className="relative w-full max-w-7xl mx-auto flex items-center justify-center">
       {/* Image Slider */}
       <div className="relative flex w-full">
         <AnimatePresence mode="wait">
@@ -46,16 +46,16 @@ export default function ImageCarousel() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
-            className="flex w-full justify-center gap-4 mb-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-4 mb-8 px-4"
           >
             {currentImages.map((src, i) => (
-              <div key={i} className="flex-none w-[25%] p-2">
+              <div key={i} className="w-full p-2">
                 <Image
                   src={src}
                   alt={`Slide ${i + 1}`}
                   width={400}
                   height={400}
-                  className="object-cover rounded-lg"
+                  className="object-cover rounded-lg w-full h-48 md:h-64"
                 />
               </div>
             ))}
@@ -66,13 +66,13 @@ export default function ImageCarousel() {
       {/* Navigation Arrows */}
       <button
         onClick={prevTile}
-        className="absolute left-2 -translate-y-1/2 z-10 bg-white text-black p-2 transition duration-500 hover:bg-[#c1b086] hover:text-white hover:cursor-pointer"
+        className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white text-black p-2 rounded-full shadow-lg transition duration-500 hover:bg-[#c1b086] hover:text-white hover:cursor-pointer"
       >
         <ChevronLeft size={24} />
       </button>
       <button
         onClick={nextTile}
-        className="absolute right-2 -translate-y-1/2 z-10 bg-white text-black p-2 transition duration-500 hover:bg-[#c1b086] hover:text-white hover:cursor-pointer"
+        className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white text-black p-2 rounded-full shadow-lg transition duration-500 hover:bg-[#c1b086] hover:text-white hover:cursor-pointer"
       >
         <ChevronRight size={24} />
       </button>
