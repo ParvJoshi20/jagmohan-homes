@@ -41,9 +41,9 @@ export default function ReviewCarousel() {
   };
 
   return (
-    <div className="relative w-full max-w-lg mx-auto">
+    <div className="relative w-full max-w-lg mx-auto px-4 lg:px-0">
       {/* Review Card */}
-      <div className="overflow-hidden shadow-[5px_5px_10px_rgba(0,0,0,0.3)] shadow-black/30 p-6 mx-6 text-white">
+      <div className="overflow-hidden shadow-[5px_5px_10px_rgba(0,0,0,0.3)] shadow-black/30 p-4 lg:p-6 mx-2 lg:mx-6 text-white rounded-lg">
         <AnimatePresence mode="wait">
           <motion.div
             key={reviews[currentIndex].id}
@@ -53,18 +53,18 @@ export default function ReviewCarousel() {
             transition={{ duration: 0.5 }}
             className="flex flex-col gap-5"
           >
-            <p className="font-sans font-medium text-justify">{reviews[currentIndex].text}</p>
+            <p className="font-sans font-medium text-justify text-sm lg:text-base leading-relaxed">{reviews[currentIndex].text}</p>
             <div className="profile flex flex-row gap-4 items-center">
               <Image
                 alt="photo of the reviewer"
                 src={reviews[currentIndex].image}
-                width={80}
-                height={80}
-                className="rounded-full border-2 border-gray-300"
+                width={60}
+                height={60}
+                className="rounded-full border-2 border-gray-300 lg:w-20 lg:h-20"
               />
               <div className="name flex flex-col">
-                <h2 className="font-sans font-bold">{reviews[currentIndex].name}</h2>
-                <h2 className="font-sans text-gray-300">{reviews[currentIndex].location}</h2>
+                <h2 className="font-sans font-bold text-sm lg:text-base">{reviews[currentIndex].name}</h2>
+                <h2 className="font-sans text-gray-300 text-xs lg:text-sm">{reviews[currentIndex].location}</h2>
               </div>
             </div>
           </motion.div>
@@ -74,7 +74,7 @@ export default function ReviewCarousel() {
       {/* Left Arrow */}
       <button
         onClick={prevSlide}
-        className="absolute -left-10 top-1/2 -translate-y-1/2 p-2 bg-white text-black rounded-full hover:bg-gray-200 hover:cursor-pointer transition"
+        className="absolute -left-2 lg:-left-10 top-1/2 -translate-y-1/2 p-2 bg-white text-black rounded-full hover:bg-gray-200 hover:cursor-pointer transition shadow-lg"
       >
         <ChevronLeft size={20} />
       </button>
@@ -82,7 +82,7 @@ export default function ReviewCarousel() {
       {/* Right Arrow */}
       <button
         onClick={nextSlide}
-        className="absolute -right-10 top-1/2 -translate-y-1/2 p-2 bg-white text-black rounded-full hover:bg-gray-200 hover:cursor-pointer transition"
+        className="absolute -right-2 lg:-right-10 top-1/2 -translate-y-1/2 p-2 bg-white text-black rounded-full hover:bg-gray-200 hover:cursor-pointer transition shadow-lg"
       >
         <ChevronRight size={20} />
       </button>
