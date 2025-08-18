@@ -128,7 +128,52 @@ export default function RoomsPage() {
         </div>
       </section>
 
+<<<<<<< HEAD
       
+=======
+      {/* Filter Section */}
+      <section className="bg-white shadow-lg -mt-16 relative z-20 mx-4 md:mx-8 lg:mx-16 rounded-lg p-6 md:p-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
+          <div className="space-y-2">
+            <label className="text-sm font-medium text-gray-700">Check-in Date</label>
+            <input
+              type="date"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#c1b086] focus:border-transparent"
+            />
+          </div>
+          <div className="space-y-2">
+            <label className="text-sm font-medium text-gray-700">Check-out Date</label>
+            <input
+              type="date"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#c1b086] focus:border-transparent"
+            />
+          </div>
+          <div className="space-y-2">
+            <label className="text-sm font-medium text-gray-700">Guests</label>
+            <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#c1b086] focus:border-transparent">
+              <option>1 Guest</option>
+              <option>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4+ Guests</option>
+            </select>
+          </div>
+          <div className="space-y-2">
+            <label className="text-sm font-medium text-gray-700">Room Type</label>
+            <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#c1b086] focus:border-transparent">
+              <option>All Rooms</option>
+              <option>Single</option>
+              <option>Double</option>
+              <option>Suite</option>
+            </select>
+          </div>
+        </div>
+        <div className="mt-6 text-center">
+          <button className="bg-[#c1b086] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#252e59] transition-colors duration-300">
+            Search Available Rooms
+          </button>
+        </div>
+      </section>
+>>>>>>> 170b0b4ee3ef47807bd3e5e78ce670b83344e433
 
       {/* Rooms Grid */}
       <section className="py-16 px-4 md:px-8 lg:px-16">
