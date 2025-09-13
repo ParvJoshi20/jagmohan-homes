@@ -36,7 +36,7 @@ export default function Section1() {
                 <h3 className="lg:-ml-60 pt-6 font-sans font-semibold text-sm md:text-base">BEST BLEND OF AFFORDABILITY AND FACILITY</h3>
                 <h1 className="lg:-ml-60 pt-6 font-serif text-2xl md:text-3xl lg:text-[40px]">Welcome to Jagmohan Homes</h1>
                 <p className="lg:-ml-20 w-full lg:w-[480px] pt-4 font-sans text-sm md:text-base leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nesciunt iste voluptas modi assumenda ea deleniti earum non praesentium quibusdam ipsa blanditiis, ducimus minima vitae inventore sequi nulla facere?<br/><br/> Velit accusamus sint architecto tenetur dolorum animi sapiente modi autem repellendus vel accusantium, labore quod! Distinctio magnam dolores, alias culpa, incidunt iste quaerat quas magni quidem, laborum velit vitae totam quod repudiandae tempore dolor cumque in ea modi et! Officia modi expedita accusamus doloremque rem assumenda iusto? Sit consectetur laudantium ullam iste minus fugit accusamus asperiores dolorem voluptatum rerum, sapiente id reprehenderit pariatur itaque saepe veniam dolore iure temporibus libero officiis!</p>
-                <button className="read-more w-full max-w-xs lg:w-45 h-12 lg:h-15 lg:-ml-20 mt-5 bg-[#c1b086] border rounded-full text-lg lg:text-xl text-white font-sans transition duration-500 hover:bg-[#252e59] hover:cursor-pointer">READ MORE</button>
+                <a href="/about" className="read-more inline-block w-full max-w-xs lg:w-45 h-12 lg:h-15 lg:-ml-20 mt-5 bg-[#c1b086] border rounded-full text-lg lg:text-xl text-white font-sans transition duration-500 hover:bg-[#252e59] hover:cursor-pointer text-center leading-12 lg:leading-15">READ MORE</a>
             </div>
         </div>
 

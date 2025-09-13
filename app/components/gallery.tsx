@@ -10,7 +10,7 @@ export default function Section5(){
                 <h3 className="font-sans font-semibold text-sm md:text-base">WELCOME TO OUR PHOTO GALLERY</h3>
                 <div className="wrapper w-full flex flex-col md:flex-row relative justify-between items-start md:items-center gap-4">
                     <h1 className="font-serif text-2xl md:text-3xl lg:text-[40px]">Photo Gallery of Our PG</h1>
-                    <button className="button w-full md:w-auto px-6 py-3 bg-[#c1b086] border rounded-full text-lg lg:text-xl text-white font-sans transition duration-500 hover:bg-[#252e59] hover:cursor-pointer">VIEW ALL</button>
+                    <a href="/gallery" className="button w-full md:w-auto px-6 py-3 bg-[#c1b086] border rounded-full text-lg lg:text-xl text-white font-sans transition duration-500 hover:bg-[#252e59] hover:cursor-pointer text-center">VIEW ALL</a>
                 </div>
             </div>
             <ImageCarousel/>

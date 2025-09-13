@@ -11,7 +11,7 @@ export default function Section3()  {
                     <h3 className="pt-6 font-sans font-semibold text-sm md:text-base">BEST BLEND OF AFFORDABILITY AND FACILITY</h3>
                     <div className="flex flex-col md:flex-row w-full justify-between items-start md:items-center gap-4">
                         <h1 className="font-serif text-2xl md:text-3xl lg:text-[40px]">Rooms</h1>
-                        <button className="button w-full md:w-auto px-6 py-3 bg-[#c1b086] border rounded-full text-lg lg:text-xl text-white font-sans transition duration-500 hover:bg-[#252e59] hover:cursor-pointer">VIEW ALL</button>
+                        <a href="/rooms" className="button w-full md:w-auto px-6 py-3 bg-[#c1b086] border rounded-full text-lg lg:text-xl text-white font-sans transition duration-500 hover:bg-[#252e59] hover:cursor-pointer text-center">VIEW ALL</a>
                     </div>
                 </div>
             </div>

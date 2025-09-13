@@ -46,11 +46,11 @@ export default function Header() {
         <nav className="hidden md:flex">
           <ul className="flex gap-6">
             {[
+              { name: "Home", href: "/" },
               { name: "Rooms", href: "/rooms" },
-              { name: "About Us", href: "/about" },
-              { name: "Amenities", href: "/amenities" },
+              { name: "About", href: "/about" },
+              { name: "Gallery", href: "/gallery" },
               { name: "Contact Us", href: "/contact" },
-              { name: "Gallery", href: "/gallery" }
             ].map((item, index) => (
                 <li key={index}>
                   <Link href={item.href}>
@@ -80,11 +80,11 @@ export default function Header() {
       >
         <ul className="flex flex-col items-center gap-4 py-5">
           {[
+            { name: "Home", href: "/" },
             { name: "Rooms", href: "/rooms" },
-            { name: "About Us", href: "/about" },
-            { name: "Amenities", href: "/amenities" },
+            { name: "About", href: "/about" },
+            { name: "Gallery", href: "/gallery" },
             { name: "Contact Us", href: "/contact" },
-            { name: "Gallery", href: "/gallery" }
           ].map((item, index) => (
               <li key={index} className="w-full text-center">
                 <Link href={item.href} onClick={() => setIsMenuOpen(false)}>

@@ -33,11 +33,11 @@ export default function Footer() {
                 <div className="content-right flex flex-col md:flex-row gap-8 lg:gap-30 w-full lg:w-auto">
                     <div className="customer-info flex flex-col gap-4 lg:gap-8 w-full md:w-fit">
                         <h1 className="heading font-serif text-2xl lg:text-3xl text-black">For Customers</h1>
-                        <h3 className="l1 font-sans font-medium text-black text-sm lg:text-[16px] pt-2 lg:pt-5">About Jagmohan Homes</h3>
-                        <h3 className="l2 font-sans font-medium text-black text-sm lg:text-[16px]">Inquiry for Rooms</h3>
-                        <h3 className="l2 font-sans font-medium text-black text-sm lg:text-[16px]">Reviews and Testimonials</h3>
-                        <h3 className="l2 font-sans font-medium text-black text-sm lg:text-[16px]">Location and Directions</h3>
-                        <h3 className="l2 font-sans font-medium text-black text-sm lg:text-[16px]">Terms and Conditions</h3>
+                        <a href="/about" className="l1 font-sans font-medium text-black text-sm lg:text-[16px] pt-2 lg:pt-5 hover:text-[#c1b086] transition-colors">About Jagmohan Homes</a>
+                        <a href="/rooms" className="l2 font-sans font-medium text-black text-sm lg:text-[16px] hover:text-[#c1b086] transition-colors">Available Rooms</a>
+                        <a href="/gallery" className="l2 font-sans font-medium text-black text-sm lg:text-[16px] hover:text-[#c1b086] transition-colors">Photo Gallery</a>
+                        <a href="/amenities" className="l2 font-sans font-medium text-black text-sm lg:text-[16px] hover:text-[#c1b086] transition-colors">Amenities & Facilities</a>
+                        <a href="/contact" className="l2 font-sans font-medium text-black text-sm lg:text-[16px] hover:text-[#c1b086] transition-colors">Contact & Location</a>
                     </div>
                     <div className="contact-us flex flex-col gap-4 lg:gap-6 w-full md:w-fit">
                         <h1 className="heading font-serif text-2xl lg:text-3xl text-black">Contact Us</h1>
@@ -45,15 +45,11 @@ export default function Footer() {
                         
                         <div className="l2 flex flex-row gap-2 items-center">
                             <Mail className="w-5 h-5" />
-                            <h3 className="l1 font-sans font-medium text-black text-sm lg:text-[16px]">xyz@gmail.com</h3>
+                            <h3 className="l1 font-sans font-medium text-black text-sm lg:text-[16px]">info@jagmohanhomes.com</h3>
                         </div>
                         <div className="l2 flex flex-row gap-2 items-center">
                             <Phone className="w-5 h-5" />
                             <h3 className="l1 font-sans font-medium text-black text-sm lg:text-[16px]">+91 8285423005</h3>
-                        </div>
-                        <div className="l2 flex flex-row gap-2 items-center">
-                            <Phone className="w-5 h-5" />
-                            <h3 className="l1 font-sans font-medium text-black text-sm lg:text-[16px]">+91 7011346403</h3>
                         </div>
                         <div className="l2 flex flex-row gap-2 items-center">
                             <Phone className="w-5 h-5" />
@@ -65,9 +61,9 @@ export default function Footer() {
             <div className="salutation flex flex-col md:flex-row px-4 md:px-8 lg:px-20 items-center justify-between mt-12 lg:mt-20 py-6 lg:py-10 border-t border-black/30 gap-4">
                 <h3 className="font-sans text-black text-sm lg:text-[16px] text-center md:text-left">Jagmohan Homes &copy; 2025 All Rights Reserved</h3>
                 <div className="wrapper flex flex-row gap-3 text-center">
-                    <h3 className="font-sans text-[#c1b086] text-xs lg:text-[14px]">About&nbsp;</h3> 
+                    <a href="/about" className="font-sans text-[#c1b086] text-xs lg:text-[14px] hover:underline">About&nbsp;</a> 
                     <h3 className="font-sans text-[#c1b086] text-xs lg:text-[14px]">/&nbsp;</h3> 
-                    <h3 className="font-sans text-[#c1b086] text-xs lg:text-[14px]">Terms and Conditions</h3>
+                    <a href="/contact" className="font-sans text-[#c1b086] text-xs lg:text-[14px] hover:underline">Contact</a>
                 </div>
             </div>
         </section>
