@@ -4,7 +4,7 @@ import { Mail, Phone} from "lucide-react";
 
 export default function Footer() {
     return(
-        <section className="footer w-full pt-16 lg:pt-30">
+        <section className="footer w-full pt-16 lg:pt-15">
             <div className="content px-4 md:px-8 lg:px-20 flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-0">
                 <div className="company flex flex-col gap-6 w-full lg:w-[20%]">
                     <div className="logo-title flex flex-row items-center gap-4">
